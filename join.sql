@@ -19,6 +19,12 @@ select * from post left join "user" on post.userid = "user".id;
 -- write a right join query
 select * from post right join "user" on post.userid = "user".id;
 
+-- write a full join query
+select * from post full join "user" on post.userid = "user".id;
+
+-- write a cross join query
+select * from post cross join "user";
+
 INSERT into post (id , title , userid) VALUES 
 (1, 'My First Post', NULL),
 (2, 'My Second Post', NULL),
